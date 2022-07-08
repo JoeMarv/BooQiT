@@ -81,13 +81,13 @@ label {
 
 .title {
     text-align: center;
-    margin: 40vw 0vw 8vw 0vw;
+    margin: 32vw 0vw 8vw 0vw;
     letter-spacing: 2vw;
     text-shadow: 2vw 2vw 2vw rgba(0,0,0, 0.4)
 }
 
 .container {
-    margin: 16vw 8vw;
+    margin: 12vw 8vw;
     background-color: var(--clr-white);
     border-radius: 4vw;
     padding: 12vw 8vw;
