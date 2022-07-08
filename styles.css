@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Josefin+Sans:wght@400;500;700&family=Kumbh+Sans:wght@300;500&display=swap');
+
+:root {
+    --clr-blue: hsl(221, 83%, 53%);
+    --clr-desaturated-blue: hsl(221, 23%, 73%);
+    --clr-grayish-blue: hsl(221, 13%, 83%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-blue: hsl(221, 83%, 53%);
+    --clr-blackish-blue: hsl(221, 83%, 23%);
+    --clr-black: hsl(0, 0%, 0%);
+    --ff-sign: 'Josefin Sans', sans-serif;
+    --ff-head: 'Raleway', sans-serif;
+    --ff-body: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, hsl(221,83%, 68%), hsl(221,83%, 53%));
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px
+}
+
+a {
+    color: var(--clr-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: var(--ff-head);
+}
+
+h1 {
+    font-family: var(--ff-sign);
+    color: var(--clr-white);
+    font-weight: 700;
+    font-size: 3.5em;
+    margin: 0vw;
+}
+
+h2 {
+    font-family: var(--ff-head);
+    color: var(--clr-blue);
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0vw;
+    text-align: center
+}
+
+h3 {
+    font-family: var(--ff-sign);
+    color: var(--clr-blackish-blue);
+    font-weight: 400;
+    font-size: 0.95em;
+    margin: 4vw 0vw 0vw 0vw;
+    text-align: center
+}
+
+input {
+    width: 62vw;
+    margin: 0vw 0vw 3vw 0vw;
+    border: none;
+    border-bottom: 0.5px solid var(--clr-grayish-blue);
+    color: var(--clr-blue);
+    padding: 1vw 2vw;
+    font-weight: 300;
+    font-family: var(--ff-body)
+}
+
+label {
+    font-family: var(--ff-body);
+    color: var(--clr-black);
+    font-size: 0.8em;
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+::placeholder {
+    font-family: var(--ff-body);
+    color: var(--clr-desaturated-blue)
+}
+
+.title {
+    text-align: center;
+    margin: 28vw 0vw 8vw 0vw;
+    letter-spacing: 2vw;
+    text-shadow: 2vw 2vw 2vw rgba(0,0,0, 0.4)
+}
+
+.container {
+    margin: 10vw 8vw;
+    background-color: var(--clr-white);
+    border-radius: 4vw;
+    padding: 12vw 8vw;
+    box-shadow: 0vw 3vw 4vw rgba(0,0,0, 0.4);
+}
+
+.form {
+    margin: 4vw 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#terms {
+    width: auto;
+    margin: 2vw 0vw 0vw 0vw
+}
+
+#remember {
+    width: auto;
+    margin: 0.5vw 0vw 0vw 0vw
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1vw 0vw;
+}
+
+.radio span {
+    color: var(--clr-blue);
+    font-weight: 500;
+}
+
+.btn {
+    width: 60vw;
+    margin: 4vw 0vw;
+    padding: 2vw 0vw;
+    border: none;
+    background-color: var(--clr-blue);
+    border-radius: 4vw;
+    color: var(--clr-white);
+    font-family: var(--ff-head);
+    font-weight: 700
+}
+
+.links {
+    font-family: var(--ff-sign);
+    color: var(--clr-black);
+    font-weight: 400;
+    font-size: 1em;
+    margin: 4vw 0vw 0vw 0vw
+}
+
+.forgot {
+    text-align: center;
+    margin: 2vw 0vw
+}
