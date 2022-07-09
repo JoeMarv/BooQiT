@@ -11,16 +11,19 @@
     --ff-sign: 'Josefin Sans', sans-serif;
     --ff-head: 'Raleway', sans-serif;
     --ff-body: 'Kumbh Sans', sans-serif;
+    --gradient: linear-gradient(135deg, hsl(221,83%, 68%), hsl(221,83%, 53%));
+    --transition: 0.3s ease;
 }
 
 body {
-    background-image: linear-gradient(135deg, hsl(221,83%, 68%), hsl(221,83%, 53%));
+    background-image: var(--gradient);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0vw;
     display: flex;
     flex-direction: column;
-    font-size: 16px
+    font-size: 16px;
+    height: 100vh;
 }
 
 a {
@@ -28,6 +31,7 @@ a {
     text-decoration: none;
     font-weight: 700;
     font-family: var(--ff-head);
+    transition: var(--transition);
 }
 
 h1 {
@@ -79,18 +83,30 @@ label {
     color: var(--clr-desaturated-blue)
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50vw;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
 .title {
     text-align: center;
-    margin: 32vw 0vw 8vw 0vw;
+    margin: 8vw 0vw;
     letter-spacing: 2vw;
     text-shadow: 2vw 2vw 2vw rgba(0,0,0, 0.4)
 }
 
 .container {
-    margin: 12vw 8vw;
+    margin: 8vw;
     background-color: var(--clr-white);
     border-radius: 4vw;
-    padding: 12vw 8vw;
+    padding: 8vw;
     box-shadow: 0vw 3vw 4vw rgba(0,0,0, 0.4);
 }
 
@@ -128,11 +144,12 @@ label {
     margin: 4vw 0vw;
     padding: 2vw 0vw;
     border: none;
-    background-color: var(--clr-blue);
+    background-image: var(--gradient);
     border-radius: 4vw;
     color: var(--clr-white);
     font-family: var(--ff-head);
-    font-weight: 700
+    font-weight: 700;
+    transition: var(--transition);
 }
 
 .links {
@@ -141,6 +158,10 @@ label {
     font-weight: 400;
     font-size: 1em;
     margin: 4vw 0vw 0vw 0vw
+}
+
+.links2 {
+    text-align: center
 }
 
 .forgot {
