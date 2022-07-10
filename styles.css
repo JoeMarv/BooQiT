@@ -157,7 +157,8 @@ label {
     color: var(--clr-black);
     font-weight: 400;
     font-size: 1em;
-    margin: 4vw 0vw 0vw 0vw
+    margin: 4vw 0vw 0vw 0vw;
+    text-align: center
 }
 
 .links2 {
@@ -168,3 +169,99 @@ label {
     text-align: center;
     margin: 2vw 0vw
 }
+
+/* For screens 768px to 1199px */
+@media only screen and (min-width: 768px) { 
+    a:hover {
+        color: var(--clr-desaturated-blue);
+        cursor: pointer;
+        transition: var(--transition);
+    }  
+
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 { 
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 0.95em;
+        margin: 2vw 0vw 0vw 0vw;
+    }
+    
+    input {
+        width: 30vw;
+        margin: 0vw 0vw 1.5vw 0vw;
+        padding: 0.5vw 1vw;
+    }
+    
+    label {
+        font-size: 0.8em;
+        margin: 0vw 0vw 0vw 1vw;
+    }
+
+    .logo-img {
+        width: 20vw;
+    }
+    
+    .title {
+        margin: 2vw 0vw 4vw 0vw;
+        letter-spacing: 1vw;
+        text-shadow: 0.5vw 0.5vw 0.5vw rgba(0,0,0, 0.4)
+    }
+    
+    .container {
+        margin: 2vw 30vw 4vw 30vw;
+        border-radius: 2vw;
+        padding: 4vw;
+        box-shadow: 0vw 1.5vw 2vw rgba(0,0,0, 0.4);
+    }
+    
+    .form {
+        margin: 2vw 0vw;
+    }
+    
+    #terms {
+        width: auto;
+        margin: 1vw 0vw 0vw 0vw
+    }
+    
+    #remember {
+        width: auto;
+        margin: 0.25vw 0vw 0vw 0vw
+    }
+    
+    .radio {
+        margin: 0.5vw 0vw;
+    }
+    
+    .btn {
+        width: 30vw;
+        margin: 1vw 0vw;
+        padding: 1vw 0vw;
+        border-radius: 2vw;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: var(--clr-blue);
+        color: var(--clr-grayish-blue);
+        transition: var(--transition);
+    }
+    
+    .links {
+        font-size: 0.8em;
+        margin: 0vw;
+    }
+    
+    .forgot {
+        margin: 1vw 0vw;
+        font-size: 0.8em
+    }
+}
+
+/* For screens 1200px to 1439px */
+
+/* For screens 1440px or higher */
