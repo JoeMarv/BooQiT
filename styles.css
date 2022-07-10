@@ -103,7 +103,7 @@ label {
 }
 
 .container {
-    margin: 12vw 8vw;
+    margin: 16vw 8vw 4vw 8vw;
     background-color: var(--clr-white);
     border-radius: 4vw;
     padding: 8vw;
